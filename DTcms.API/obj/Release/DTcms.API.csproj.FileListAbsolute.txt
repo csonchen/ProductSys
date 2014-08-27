@@ -1,0 +1,16 @@
+E:\ProductSys\DTcms.API\bin\Release\DTcms.API.dll
+E:\ProductSys\DTcms.API\bin\Release\DTcms.API.pdb
+E:\ProductSys\DTcms.API\bin\Release\DTcms.BLL.dll
+E:\ProductSys\DTcms.API\bin\Release\DTcms.Common.dll
+E:\ProductSys\DTcms.API\bin\Release\DTcms.Model.dll
+E:\ProductSys\DTcms.API\bin\Release\LitJson.dll
+E:\ProductSys\DTcms.API\bin\Release\DTcms.DAL.dll
+E:\ProductSys\DTcms.API\bin\Release\DTcms.DBUtility.dll
+E:\ProductSys\DTcms.API\bin\Release\DTcms.BLL.pdb
+E:\ProductSys\DTcms.API\bin\Release\DTcms.Common.pdb
+E:\ProductSys\DTcms.API\bin\Release\DTcms.Model.pdb
+E:\ProductSys\DTcms.API\bin\Release\DTcms.DAL.pdb
+E:\ProductSys\DTcms.API\bin\Release\DTcms.DBUtility.pdb
+E:\ProductSys\DTcms.API\obj\Release\DTcms.API.csprojResolveAssemblyReference.cache
+E:\ProductSys\DTcms.API\obj\Release\DTcms.API.dll
+E:\ProductSys\DTcms.API\obj\Release\DTcms.API.pdb

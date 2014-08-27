@@ -1,0 +1,547 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=gb2312">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 11">
+<meta name=Originator content="Microsoft Word 11">
+<link rel=File-List href="201101261012438604.files/filelist.xml">
+<title>jquery&Ocirc;&acute;&Acirc;&euml;&#8226;&Ouml;&Icirc;&ouml;&pound;&ordm;</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:LastAuthor>admin</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>0</o:TotalTime>
+  <o:Created>2011-01-26T02:12:00Z</o:Created>
+  <o:LastSaved>2011-01-26T02:12:00Z</o:LastSaved>
+  <o:Pages>3</o:Pages>
+  <o:Words>377</o:Words>
+  <o:Characters>2151</o:Characters>
+  <o:Company>China</o:Company>
+  <o:Lines>17</o:Lines>
+  <o:Paragraphs>5</o:Paragraphs>
+  <o:CharactersWithSpaces>2523</o:CharactersWithSpaces>
+  <o:Version>11.9999</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:PunctuationKerning/>
+  <w:DrawingGridVerticalSpacing>7.8 磅</w:DrawingGridVerticalSpacing>
+  <w:DisplayHorizontalDrawingGridEvery>0</w:DisplayHorizontalDrawingGridEvery>
+  <w:DisplayVerticalDrawingGridEvery>2</w:DisplayVerticalDrawingGridEvery>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:Compatibility>
+   <w:SpaceForUL/>
+   <w:BalanceSingleByteDoubleByteWidth/>
+   <w:DoNotLeaveBackslashAlone/>
+   <w:ULTrailSpace/>
+   <w:DoNotExpandShiftReturn/>
+   <w:AdjustLineHeightInTable/>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+   <w:DontGrowAutofit/>
+   <w:UseFELayout/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" LatentStyleCount="156">
+ </w:LatentStyles>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:宋体;
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-alt:SimSun;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 680460288 22 0 262145 0;}
+@font-face
+	{font-family:"\@宋体";
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 680460288 22 0 262145 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:none;
+	font-size:10.5pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:宋体;
+	mso-font-kerning:1.0pt;}
+p.MsoPlainText, li.MsoPlainText, div.MsoPlainText
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:none;
+	font-size:10.5pt;
+	font-family:宋体;
+	mso-hansi-font-family:"Courier New";
+	mso-bidi-font-family:"Courier New";
+	mso-font-kerning:1.0pt;}
+ /* Page Definitions */
+ @page
+	{mso-page-border-surround-header:no;
+	mso-page-border-surround-footer:no;}
+@page Section1
+	{size:595.3pt 841.9pt;
+	margin:72.0pt 87.65pt 72.0pt 87.65pt;
+	mso-header-margin:42.55pt;
+	mso-footer-margin:49.6pt;
+	mso-paper-source:0;
+	layout-grid:15.6pt;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:普通表格;
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-para-margin:0cm;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-ansi-language:#0400;
+	mso-fareast-language:#0400;
+	mso-bidi-language:#0400;}
+</style>
+<![endif]-->
+</head>
+
+<body lang=ZH-CN style='tab-interval:21.0pt;text-justify-trim:punctuation'>
+
+<div class=Section1 style='layout-grid:15.6pt'>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'>jquery&Ocirc;&acute;&Acirc;&euml;·&Ouml;&Icirc;&ouml;&pound;&ordm;<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'>°&aelig;±&frac34;&frac12;&sup2;&frac12;&acirc;&pound;&ordm;jquery
+2.0.3;<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'>1.&Auml;&auml;&Atilde;&ucirc;&ordm;&macr;&Ecirc;&yacute;&pound;&ordm;·&Agrave;&Ouml;&sup1;&acute;ú&Acirc;&euml;&sup3;&aring;&Iacute;&raquo;<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'>(function(){<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'><span
+style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp; </span>window.$ =
+$;//&Egrave;&laquo;&frac34;&Ouml;&ordm;&macr;&Ecirc;&yacute;&cedil;&sup3;&Ouml;&micro;&frac14;&acute;&iquest;&Eacute;<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'>})();<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'>$();<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'>2.(function(){<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'><span
+style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp; </span>(21,94)&para;¨&Ograve;&aring;&Aacute;&Euml;&Ograve;&raquo;&ETH;&copy;±&auml;&Aacute;&iquest;&ordm;&Iacute;&ordm;&macr;&Ecirc;&yacute;
+jQuery = function(){};<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'><span
+style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp; </span><o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'><span
+style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp; </span>(96,283)&cedil;&oslash;Jquery&para;&Ocirc;&Iuml;ó&Igrave;í&frac14;&Oacute;&Ograve;&raquo;&ETH;&copy;·&frac12;·¨&ordm;&Iacute;&Ecirc;&ocirc;&ETH;&Ocirc;&pound;&raquo;<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'><span
+style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp; </span><o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'><span
+style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp; </span>&pound;¨285,347&pound;&copy;extend:jq&micro;&Auml;&frac14;&Igrave;&sup3;&ETH;·&frac12;·¨<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'><span
+style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp; </span><o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'><span
+style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp; </span>&pound;¨349,817&pound;&copy;jquery.extend&pound;¨&pound;&copy;&pound;&ordm;&Agrave;&copy;&Otilde;&sup1;&Ograve;&raquo;&ETH;&copy;&sup1;¤&frac34;&szlig;·&frac12;·¨<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'><span
+style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp; </span>&pound;¨877,2856&pound;&copy;sizzle&pound;&ordm;&cedil;&acute;&Ocirc;&Oacute;&Ntilde;&iexcl;&Ocirc;&ntilde;&AElig;÷&micro;&Auml;&Ecirc;&micro;&Iuml;&Ouml;<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'><span
+style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp; </span>&pound;¨2880&pound;&not;3042&pound;&copy;Callbacks&pound;&ordm;&raquo;&Oslash;&micro;÷&para;&Ocirc;&Iuml;ó&pound;&ordm;&ordm;&macr;&Ecirc;&yacute;&micro;&Auml;&Ograve;&raquo;&cedil;&ouml;&Iacute;&sup3;&Ograve;&raquo;&sup1;&Uuml;&Agrave;í<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'><span
+style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp; </span>//function fn1(){}<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'><span
+style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp; </span>function fn2(){}<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'><span
+style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp; </span>var cb = $.Callbacks();<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'><span
+style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp; </span>cb.add(fn1);<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'><span
+style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp; </span>cb.add(fn2);<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'><span
+style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp; </span>cb.remove();<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'><span
+style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp; </span>cb.fire();<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'><span
+style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp; </span>(3043,3183)Deferred&pound;&ordm;&Ntilde;&Oacute;&sup3;&Ugrave;&para;&Ocirc;&Iuml;ó&pound;&ordm;&para;&Ocirc;&Ograve;ì&sup2;&frac12;&micro;&Auml;&Iacute;&sup3;&Ograve;&raquo;&sup1;&Uuml;&Agrave;í<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'><span
+style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp; </span>//var dfd = $.Deferred();<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'><span
+style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp; </span>setTimeout(function(){<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'><span
+style='mso-tab-count:2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>alert(1);<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'><span
+style='mso-tab-count:2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>dfd.resolve();<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'><span
+style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp; </span>},1000);<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'><span
+style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp; </span>dfd.done(function(){<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'><span
+style='mso-tab-count:2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>alert(2);<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'><span
+style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp; </span>});<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'><span
+style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp; </span><o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'><span
+style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp; </span>(3184,3295)Support&pound;&ordm;&sup1;&brvbar;&Auml;&Uuml;&frac14;ì&sup2;&acirc;<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'><span
+style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp; </span>&pound;¨3380,3652&pound;&copy;data&pound;¨&pound;&copy;&pound;&ordm;&Ecirc;&yacute;&frac34;&Yacute;&raquo;&ordm;&acute;&aelig;<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'><span
+style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp; </span>//$('#div1').data('name','hello');<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'><span
+style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp; </span>$('#div1').data('name');<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'><span
+style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp; </span><o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'><span
+style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp; </span>(3653,3797)queue():&para;&Oacute;&Aacute;&ETH;&sup1;&Uuml;&Agrave;í(&Egrave;&euml;&para;&Oacute;)&pound;&raquo;dequeue():&para;&Oacute;&Aacute;&ETH;&sup1;&Uuml;&Agrave;í&pound;¨&sup3;&ouml;&para;&Oacute;&pound;&copy;<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'><span
+style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp; </span>//$('#div1').animate({left:100});<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'><span
+style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp; </span>$('#div1').animate({top:100});<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'><span
+style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp; </span>$('#div1').animate({width:100});<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'><span
+style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp; </span>(3803,4299) attr() prop()
+val() addClass()&micro;&Egrave;&pound;&ordm;&para;&Ocirc;&Ocirc;&ordf;&Euml;&Oslash;&Ecirc;&ocirc;&ETH;&Ocirc;&micro;&Auml;&sup2;&Ugrave;×÷<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'><span
+style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp; </span>(4300,5128) on() trigger() :
+&Ecirc;&Acirc;&frac14;&thorn;&sup2;&Ugrave;×÷&micro;&Auml;&Iuml;à&sup1;&Oslash;·&frac12;·¨<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'><span
+style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp; </span>(5140,6057) DOM&sup2;&Ugrave;×÷
+:&iexcl;&iexcl;&Igrave;í&frac14;&Oacute;&pound;&not;&Eacute;&frac34;&sup3;&yacute;&pound;&not;&raquo;&ntilde;&Egrave;&iexcl;&pound;&not;°ü×° DOM&Euml;&cent;&Ntilde;&iexcl;<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'><span
+style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp; </span>(6058,6620) css() :
+&Ntilde;ù&Ecirc;&frac12;&micro;&Auml;&sup2;&Ugrave;×÷<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'><span
+style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp; </span>(6621,7854)
+&Igrave;á&frac12;&raquo;&micro;&Auml;&Ecirc;&yacute;&frac34;&Yacute;&ordm;&Iacute;ajax&pound;¨&pound;&copy;&pound;&ordm;<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'><span
+style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp; </span>//ajax(),load(),getJSON()<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'><span
+style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp; </span>(7855,8584)animate&pound;¨&pound;&copy;&pound;&ordm;&Ocirc;&Euml;&para;&macr;&micro;&Auml;·&frac12;·¨<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'><span
+style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp; </span>&pound;¨8585,8792&pound;&copy;offset():&Icirc;&raquo;&Ouml;&Atilde;&Oacute;&euml;&sup3;&szlig;&acute;&ccedil;&micro;&Auml;·&frac12;·¨<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'><span
+style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp; </span>&pound;¨8804,8821&pound;&copy;jq&Ouml;§&sup3;&Ouml;&Auml;&pound;&iquest;é&raquo;&macr;&micro;&Auml;&Auml;&pound;&Ecirc;&frac12;<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'><span
+style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp; </span><o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'><span
+style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp; </span>(8826)window.jQuery =
+window.$ = jQuery;//&ordm;&macr;&Ecirc;&yacute;&sup1;&Ograve;&Ocirc;&Oslash;<span style='mso-tab-count:2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'>})(window);<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'>----<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'>(function(window,undefined){//&Ntilde;&sup1;&Euml;&otilde;&ETH;è&Ograve;&ordf;,&frac34;&Ouml;&sup2;&iquest;±&auml;&Aacute;&iquest;&sup2;é&Otilde;&Ograve;<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'><span
+style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp; </span><o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'>})();<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'>--<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'>&quot;use
+strict&quot;;//&Ecirc;&sup1;&Oacute;&Atilde;&Ntilde;&Iuml;&cedil;&ntilde;&Auml;&pound;&Ecirc;&frac12;<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'>--<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'>rootjQuery
+//±&atilde;&Oacute;&Uacute;&Ntilde;&sup1;&Euml;&otilde;<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'>--<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'>window.a
+== undefined;<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'>typeof
+window.a == 'undefined';<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'>xmlNode.method<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'>--<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'>location
+= window.location//&Oacute;&Atilde;&Oacute;&Uacute;&sup3;&pound;&Oacute;&Atilde;±&auml;&Aacute;&iquest;&micro;&Auml;&acute;&aelig;&acute;&cent;<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'>--<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'>$();<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'>jQuery();<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'>//·&Agrave;&sup3;&aring;&Iacute;&raquo;<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'>_jQuery
+= window.jQuery;<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'>_$window.$;<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'>--<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'>class2type
+= {},×&ouml;&Agrave;à&ETH;&Iacute;&Aring;&ETH;&para;&Iuml;<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'>--<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'>core_deletedIds
+= [],&raquo;&ordm;&acute;&aelig;&Ecirc;&yacute;×é<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'>--&Ouml;&Oslash;&micro;&atilde;<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'>jQuery
+= function(selector,context){//·&micro;&raquo;&Oslash;&Ograve;&raquo;&cedil;&ouml;&para;&Ocirc;&Iuml;ó<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'><span
+style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp; </span>return ....;<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'>};<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'>$()
+jQuery()<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'>function
+Aaa(){}<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'>Aaa.prototype.init
+= function(){};<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'>Aaa.prototype.css
+= function(){};<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'>var a1
+= new Aaa();<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'>a1.init();<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'>a1.css();<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'>function
+jQuery(){<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'><span
+style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp; </span>return new
+jQuery.prototype.init();<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'>}<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'>jQuery.fn.init.prototype
+= jQuery.prototype;<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'>jQuery.prototype.init
+= function(){};<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'>jQuery.prototype.css
+= function(){};<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'>jQuery().css();<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'>--<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'>core_pnum//&Otilde;&yacute;&Ocirc;ò&AElig;&yen;&Aring;&auml;&Ecirc;&yacute;×&Ouml;<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'>rsingleTag<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'>webkit<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'>-webkit-margin-left<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'>-ms-margin-left()&Ccedil;°×&ordm;<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'>--<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='font-family:"Courier New"'><o:p>&nbsp;</o:p></span></p>
+
+</div>
+
+</body>
+
+</html>

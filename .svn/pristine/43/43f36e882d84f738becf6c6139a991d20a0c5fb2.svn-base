@@ -1,0 +1,694 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=gb2312">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 11">
+<meta name=Originator content="Microsoft Word 11">
+<link rel=File-List href="201101261013250048.files/filelist.xml">
+<title>jquery源码分析：</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:LastAuthor>admin</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>0</o:TotalTime>
+  <o:Created>2011-01-26T02:13:00Z</o:Created>
+  <o:LastSaved>2011-01-26T02:13:00Z</o:LastSaved>
+  <o:Pages>3</o:Pages>
+  <o:Words>335</o:Words>
+  <o:Characters>1911</o:Characters>
+  <o:Company>China</o:Company>
+  <o:Lines>15</o:Lines>
+  <o:Paragraphs>4</o:Paragraphs>
+  <o:CharactersWithSpaces>2242</o:CharactersWithSpaces>
+  <o:Version>11.9999</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:PunctuationKerning/>
+  <w:DrawingGridVerticalSpacing>7.8 磅</w:DrawingGridVerticalSpacing>
+  <w:DisplayHorizontalDrawingGridEvery>0</w:DisplayHorizontalDrawingGridEvery>
+  <w:DisplayVerticalDrawingGridEvery>2</w:DisplayVerticalDrawingGridEvery>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:Compatibility>
+   <w:SpaceForUL/>
+   <w:BalanceSingleByteDoubleByteWidth/>
+   <w:DoNotLeaveBackslashAlone/>
+   <w:ULTrailSpace/>
+   <w:DoNotExpandShiftReturn/>
+   <w:AdjustLineHeightInTable/>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+   <w:DontGrowAutofit/>
+   <w:UseFELayout/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" LatentStyleCount="156">
+ </w:LatentStyles>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:宋体;
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-alt:SimSun;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 680460288 22 0 262145 0;}
+@font-face
+	{font-family:"\@宋体";
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 680460288 22 0 262145 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:none;
+	font-size:10.5pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:宋体;
+	mso-font-kerning:1.0pt;}
+p.MsoPlainText, li.MsoPlainText, div.MsoPlainText
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:none;
+	font-size:10.5pt;
+	font-family:宋体;
+	mso-hansi-font-family:"Courier New";
+	mso-bidi-font-family:"Courier New";
+	mso-font-kerning:1.0pt;}
+ /* Page Definitions */
+ @page
+	{mso-page-border-surround-header:no;
+	mso-page-border-surround-footer:no;}
+@page Section1
+	{size:595.3pt 841.9pt;
+	margin:72.0pt 87.65pt 72.0pt 87.65pt;
+	mso-header-margin:42.55pt;
+	mso-footer-margin:49.6pt;
+	mso-paper-source:0;
+	layout-grid:15.6pt;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:普通表格;
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-para-margin:0cm;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-ansi-language:#0400;
+	mso-fareast-language:#0400;
+	mso-bidi-language:#0400;}
+</style>
+<![endif]-->
+</head>
+
+<body lang=ZH-CN style='tab-interval:21.0pt;text-justify-trim:punctuation'>
+
+<div class=Section1 style='layout-grid:15.6pt'>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'>jquery</span><span style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'>源码分析：<span lang=EN-US><o:p></o:p></span></span></p>
+
+<p class=MsoPlainText><span style='mso-hansi-font-family:宋体;mso-bidi-font-family:
+宋体'>版本讲解：<span lang=EN-US>jquery 2.0.3;<o:p></o:p></span></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'>1.</span><span style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'>匿名函数：防止代码冲突<span lang=EN-US><o:p></o:p></span></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'>(function(){<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'><span style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp; </span>window.$
+= $;//</span><span style='mso-hansi-font-family:宋体;mso-bidi-font-family:宋体'>全局函数赋值即可<span
+lang=EN-US><o:p></o:p></span></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'>})();<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'>$();<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'>2.(function(){<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'><span style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp; </span>(21,94)</span><span
+style='mso-hansi-font-family:宋体;mso-bidi-font-family:宋体'>定义了一些变量和函数<span
+lang=EN-US> jQuery = function(){};<o:p></o:p></span></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'><span style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp; </span><o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'><span style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp; </span>(96,283)</span><span
+style='mso-hansi-font-family:宋体;mso-bidi-font-family:宋体'>给<span lang=EN-US>Jquery</span>对象添加一些方法和属性；<span
+lang=EN-US><o:p></o:p></span></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'><span style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp; </span><o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'><span style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp; </span></span><span
+style='mso-hansi-font-family:宋体;mso-bidi-font-family:宋体'>（<span lang=EN-US>285,347</span>）<span
+lang=EN-US>extend:jq</span>的继承方法<span lang=EN-US><o:p></o:p></span></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'><span style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp; </span><o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'><span style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp; </span></span><span
+style='mso-hansi-font-family:宋体;mso-bidi-font-family:宋体'>（<span lang=EN-US>349,817</span>）<span
+lang=EN-US>jquery.extend</span>（）：扩展一些工具方法<span lang=EN-US><o:p></o:p></span></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'><span style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp; </span></span><span
+style='mso-hansi-font-family:宋体;mso-bidi-font-family:宋体'>（<span lang=EN-US>877,2856</span>）<span
+lang=EN-US>sizzle</span>：复杂选择器的实现<span lang=EN-US><o:p></o:p></span></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'><span style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp; </span></span><span
+style='mso-hansi-font-family:宋体;mso-bidi-font-family:宋体'>（<span lang=EN-US>2880</span>，<span
+lang=EN-US>3042</span>）<span lang=EN-US>Callbacks</span>：回调对象：函数的一个统一管理<span
+lang=EN-US><o:p></o:p></span></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'><span style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp; </span>//function
+fn1(){}<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'><span style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp; </span>function
+fn2(){}<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'><span style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp; </span>var
+cb = $.Callbacks();<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'><span style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp; </span>cb.add(fn1);<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'><span style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp; </span>cb.add(fn2);<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'><span style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp; </span>cb.remove();<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'><span style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp; </span>cb.fire();<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'><span style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp; </span>(3043,3183)Deferred</span><span
+style='mso-hansi-font-family:宋体;mso-bidi-font-family:宋体'>：延迟对象：对异步的统一管理<span
+lang=EN-US><o:p></o:p></span></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'><span style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp; </span>//var
+dfd = $.Deferred();<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'><span style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp; </span>setTimeout(function(){<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'><span style='mso-tab-count:2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>alert(1);<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'><span style='mso-tab-count:2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>dfd.resolve();<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'><span style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp; </span>},1000);<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'><span style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp; </span>dfd.done(function(){<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'><span style='mso-tab-count:2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>alert(2);<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'><span style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp; </span>});<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'><span style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp; </span><o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'><span style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp; </span>(3184,3295)Support</span><span
+style='mso-hansi-font-family:宋体;mso-bidi-font-family:宋体'>：功能检测<span lang=EN-US><o:p></o:p></span></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'><span style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp; </span></span><span
+style='mso-hansi-font-family:宋体;mso-bidi-font-family:宋体'>（<span lang=EN-US>3380,3652</span>）<span
+lang=EN-US>data</span>（）：数据缓存<span lang=EN-US><o:p></o:p></span></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'><span style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp; </span>//$('#div1').data('name','hello');<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'><span style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp; </span>$('#div1').data('name');<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'><span style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp; </span><o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'><span style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp; </span>(3653,3797)queue():</span><span
+style='mso-hansi-font-family:宋体;mso-bidi-font-family:宋体'>队列管理<span lang=EN-US>(</span>入队<span
+lang=EN-US>)</span>；<span lang=EN-US>dequeue():</span>队列管理（出队）<span lang=EN-US><o:p></o:p></span></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'><span style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp; </span>//$('#div1').animate({left:100});<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'><span style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp; </span>$('#div1').animate({top:100});<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'><span style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp; </span>$('#div1').animate({width:100});<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'><span style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp; </span>(3803,4299)
+attr() prop() val() addClass()</span><span style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'>等：对元素属性的操作<span lang=EN-US><o:p></o:p></span></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'><span style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp; </span>(4300,5128)
+on() trigger() : </span><span style='mso-hansi-font-family:宋体;mso-bidi-font-family:
+宋体'>事件操作的相关方法<span lang=EN-US><o:p></o:p></span></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'><span style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp; </span>(5140,6057)
+DOM</span><span style='mso-hansi-font-family:宋体;mso-bidi-font-family:宋体'>操作<span
+lang=EN-US> :</span>　添加，删除，获取，包装<span lang=EN-US> DOM</span>刷选<span lang=EN-US><o:p></o:p></span></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'><span style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp; </span>(6058,6620)
+css() : </span><span style='mso-hansi-font-family:宋体;mso-bidi-font-family:宋体'>样式的操作<span
+lang=EN-US><o:p></o:p></span></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'><span style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp; </span>(6621,7854)
+</span><span style='mso-hansi-font-family:宋体;mso-bidi-font-family:宋体'>提交的数据和<span
+lang=EN-US>ajax</span>（）：<span lang=EN-US><o:p></o:p></span></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'><span style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp; </span>//ajax(),load(),getJSON()<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'><span style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp; </span>(7855,8584)animate</span><span
+style='mso-hansi-font-family:宋体;mso-bidi-font-family:宋体'>（）：运动的方法<span
+lang=EN-US><o:p></o:p></span></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'><span style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp; </span></span><span
+style='mso-hansi-font-family:宋体;mso-bidi-font-family:宋体'>（<span lang=EN-US>8585,8792</span>）<span
+lang=EN-US>offset():</span>位置与尺寸的方法<span lang=EN-US><o:p></o:p></span></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'><span style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp; </span></span><span
+style='mso-hansi-font-family:宋体;mso-bidi-font-family:宋体'>（<span lang=EN-US>8804,8821</span>）<span
+lang=EN-US>jq</span>支持模块化的模式<span lang=EN-US><o:p></o:p></span></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'><span style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp; </span><o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'><span style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp; </span>(8826)window.jQuery
+= window.$ = jQuery;//</span><span style='mso-hansi-font-family:宋体;mso-bidi-font-family:
+宋体'>函数挂载<span lang=EN-US><span style='mso-tab-count:2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><o:p></o:p></span></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'>})(window);<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'>----<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'>(function(window,undefined){//</span><span
+style='mso-hansi-font-family:宋体;mso-bidi-font-family:宋体'>压缩需要<span lang=EN-US>,</span>局部变量查找<span
+lang=EN-US><o:p></o:p></span></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'><span style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp; </span><o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'>})();<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'>--<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'>&quot;use strict&quot;;//</span><span
+style='mso-hansi-font-family:宋体;mso-bidi-font-family:宋体'>使用严格模式<span
+lang=EN-US><o:p></o:p></span></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'>--<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'>rootjQuery //</span><span style='mso-hansi-font-family:
+宋体;mso-bidi-font-family:宋体'>便于压缩<span lang=EN-US><o:p></o:p></span></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'>--<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'>window.a == undefined;<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'>typeof window.a == 'undefined';<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'>xmlNode.method<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'>--<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'>location = window.location//</span><span
+style='mso-hansi-font-family:宋体;mso-bidi-font-family:宋体'>用于常用变量的存储<span
+lang=EN-US><o:p></o:p></span></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'>--<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'>$();<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'>jQuery();<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'>//</span><span style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'>防冲突<span lang=EN-US><o:p></o:p></span></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'>_jQuery = window.jQuery;<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'>_$window.$;<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'>--<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'>class2type = {},</span><span style='mso-hansi-font-family:
+宋体;mso-bidi-font-family:宋体'>做类型判断<span lang=EN-US><o:p></o:p></span></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'>--<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'>core_deletedIds = [],</span><span style='mso-hansi-font-family:
+宋体;mso-bidi-font-family:宋体'>缓存数组<span lang=EN-US><o:p></o:p></span></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'>--</span><span style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'>重点<span lang=EN-US><o:p></o:p></span></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'>jQuery = function(selector,context){//</span><span
+style='mso-hansi-font-family:宋体;mso-bidi-font-family:宋体'>返回一个对象<span
+lang=EN-US><o:p></o:p></span></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'><span style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp; </span>return
+....;<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'>};<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'>$() jQuery()<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'>function Aaa(){}<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'>Aaa.prototype.init = function(){};<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'>Aaa.prototype.css = function(){};<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'>var a1 = new Aaa();<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'>a1.init();<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'>a1.css();<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'>function jQuery(){<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'><span style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp; </span>return
+new jQuery.prototype.init();<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'>}<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'>jQuery.fn.init.prototype = jQuery.prototype;<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'>jQuery.prototype.init = function(){};<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'>jQuery.prototype.css = function(){};<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'>jQuery().css();<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'>--<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'>core_pnum//</span><span style='mso-hansi-font-family:
+宋体;mso-bidi-font-family:宋体'>正则匹配数字<span lang=EN-US><o:p></o:p></span></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'>rsingleTag<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'>webkit<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'>-webkit-margin-left<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'>-ms-margin-left()</span><span style='mso-hansi-font-family:
+宋体;mso-bidi-font-family:宋体'>前缀<span lang=EN-US><o:p></o:p></span></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'>--<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText><span lang=EN-US style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'><o:p>&nbsp;</o:p></span></p>
+
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,4 @@
+E:\ProductSys\DTcms.Common\bin\Release\DTcms.Common.dll
+E:\ProductSys\DTcms.Common\bin\Release\DTcms.Common.pdb
+E:\ProductSys\DTcms.Common\obj\Release\DTcms.Common.dll
+E:\ProductSys\DTcms.Common\obj\Release\DTcms.Common.pdb

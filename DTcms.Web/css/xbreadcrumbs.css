@@ -1,0 +1,83 @@
+/*
+	xBreadcrumbs (Extended Breadcrumbs) jQuery Plugin
+	?2009 ajaxBlender.com
+	For any questions please visit www.ajaxblender.com 
+	or email us at support@ajaxblender.com
+*/
+
+.xbreadcrumbs {
+	position: relative;
+	z-index: 1000;
+}
+.xbreadcrumbs LI UL { 
+	position: absolute;
+	float: left;
+}
+.xbreadcrumbs, .xbreadcrumbs LI, .xbreadcrumbs UL, .xbreadcrumbs UL LI {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.xbreadcrumbs { clear: both; }
+.xbreadcrumbs, .xbreadcrumbs LI {
+	float: left;
+}
+.xbreadcrumbs UL {
+	display: none;
+}
+
+/*  Base style of xBreadcrumbs  */
+/*  Top Level  */
+.xbreadcrumbs {
+	width: 100%;
+}
+.xbreadcrumbs LI {
+	padding: 5px;
+	height: 16px;
+}
+.xbreadcrumbs LI.current {
+	border-right: none;
+}
+.xbreadcrumbs LI A {
+	font-size: 11px;
+	color: #666666;
+	text-decoration: none;
+}
+.xbreadcrumbs LI A:HOVER, .xbreadcrumbs LI.hover A {
+
+}
+/*  Top Level - Current Page  */
+.xbreadcrumbs LI.current A {
+	color: #080808;
+	font-weight: bold;
+}
+/*  Sub-level  */
+.xbreadcrumbs LI UL {
+	padding: 3px;
+	background: #FFFFF0;
+	font-size: 11px;
+	width: 240px;
+	top: 25px;
+    border:1px solid #CC3333;
+    border-top:none;
+}
+.xbreadcrumbs LI UL LI {
+	float: left;
+	width: 100%;
+	border-right: none;
+	height: auto;
+}
+.xbreadcrumbs LI UL LI A {
+	text-decoration: none;
+	color: #080808 !important;
+	display: block;
+	padding: 12px;
+    font-size:14px;
+	border-bottom: 1px dotted #666666;
+}
+.xbreadcrumbs LI UL LI:last-child A {
+	border-bottom: none;
+}
+.xbreadcrumbs LI UL LI A:HOVER {
+    background: #FFEC8B;
+}

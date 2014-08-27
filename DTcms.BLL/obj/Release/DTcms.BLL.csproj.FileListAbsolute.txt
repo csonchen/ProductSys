@@ -1,0 +1,13 @@
+E:\ProductSys\DTcms.BLL\bin\Release\DTcms.BLL.dll
+E:\ProductSys\DTcms.BLL\bin\Release\DTcms.BLL.pdb
+E:\ProductSys\DTcms.BLL\bin\Release\DTcms.Common.dll
+E:\ProductSys\DTcms.BLL\bin\Release\DTcms.DAL.dll
+E:\ProductSys\DTcms.BLL\bin\Release\DTcms.Model.dll
+E:\ProductSys\DTcms.BLL\bin\Release\DTcms.DBUtility.dll
+E:\ProductSys\DTcms.BLL\bin\Release\DTcms.Common.pdb
+E:\ProductSys\DTcms.BLL\bin\Release\DTcms.DAL.pdb
+E:\ProductSys\DTcms.BLL\bin\Release\DTcms.Model.pdb
+E:\ProductSys\DTcms.BLL\bin\Release\DTcms.DBUtility.pdb
+E:\ProductSys\DTcms.BLL\obj\Release\DTcms.BLL.csprojResolveAssemblyReference.cache
+E:\ProductSys\DTcms.BLL\obj\Release\DTcms.BLL.dll
+E:\ProductSys\DTcms.BLL\obj\Release\DTcms.BLL.pdb

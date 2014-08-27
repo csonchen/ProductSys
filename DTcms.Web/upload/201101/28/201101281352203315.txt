@@ -1,0 +1,162 @@
+jquery源码分析：
+版本讲解：jquery 2.0.3;
+
+1.匿名函数：防止代码冲突
+(function(){
+	window.$ = $;//全局函数赋值即可
+})();
+
+$();
+
+
+2.(function(){
+	(21,94)定义了一些变量和函数 jQuery = function(){};
+	
+
+	(96,283)给Jquery对象添加一些方法和属性；
+	
+	（285,347）extend:jq的继承方法
+	
+	（349,817）jquery.extend（）：扩展一些工具方法
+
+	（877,2856）sizzle：复杂选择器的实现
+
+	（2880，3042）Callbacks：回调对象：函数的一个统一管理
+	//function fn1(){}
+	function fn2(){}
+	var cb = $.Callbacks();
+	cb.add(fn1);
+	cb.add(fn2);
+	cb.remove();
+	cb.fire();
+
+	(3043,3183)Deferred：延迟对象：对异步的统一管理
+	//var dfd = $.Deferred();
+	setTimeout(function(){
+		alert(1);
+		dfd.resolve();
+	},1000);
+
+	dfd.done(function(){
+		alert(2);
+	});
+	
+	(3184,3295)Support：功能检测
+
+	（3380,3652）data（）：数据缓存
+	//$('#div1').data('name','hello');
+	$('#div1').data('name');
+	
+	(3653,3797)queue():队列管理(入队)；dequeue():队列管理（出队）
+	//$('#div1').animate({left:100});
+	$('#div1').animate({top:100});
+	$('#div1').animate({width:100});
+
+	(3803,4299) attr() prop() val() addClass()等：对元素属性的操作
+
+	(4300,5128) on() trigger() : 事件操作的相关方法
+
+	(5140,6057) DOM操作 :　添加，删除，获取，包装 DOM刷选
+
+	(6058,6620) css() : 样式的操作
+
+	(6621,7854) 提交的数据和ajax（）：
+	//ajax(),load(),getJSON()
+
+	(7855,8584)animate（）：运动的方法
+
+	（8585,8792）offset():位置与尺寸的方法
+
+	（8804,8821）jq支持模块化的模式
+	
+	(8826)window.jQuery = window.$ = jQuery;//函数挂载		
+})(window);
+
+
+----
+(function(window,undefined){//压缩需要,局部变量查找
+	
+})();
+
+--
+"use strict";//使用严格模式
+
+--
+rootjQuery //便于压缩
+
+--
+window.a == undefined;
+typeof window.a == 'undefined';
+xmlNode.method
+
+--
+location = window.location//用于常用变量的存储
+
+--
+$();
+jQuery();
+//防冲突
+_jQuery = window.jQuery;
+_$window.$;
+
+--
+class2type = {},做类型判断
+
+--
+core_deletedIds = [],缓存数组
+
+--重点
+jQuery = function(selector,context){//返回一个对象
+	return ....;
+};
+
+$() jQuery()
+
+function Aaa(){}
+Aaa.prototype.init = function(){};
+Aaa.prototype.css = function(){};
+var a1 = new Aaa();
+a1.init();
+a1.css();
+
+function jQuery(){
+	return new jQuery.prototype.init();
+}
+jQuery.fn.init.prototype = jQuery.prototype;
+jQuery.prototype.init = function(){};
+jQuery.prototype.css = function(){};
+jQuery().css();
+
+
+--
+core_pnum//正则匹配数字
+rsingleTag
+webkit
+-webkit-margin-left
+-ms-margin-left()前缀
+
+--
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

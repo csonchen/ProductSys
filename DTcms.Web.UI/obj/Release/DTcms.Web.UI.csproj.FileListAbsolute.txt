@@ -1,0 +1,16 @@
+E:\ProductSys\DTcms.Web.UI\bin\Release\DTcms.Web.UI.dll
+E:\ProductSys\DTcms.Web.UI\bin\Release\DTcms.Web.UI.pdb
+E:\ProductSys\DTcms.Web.UI\bin\Release\DTcms.BLL.dll
+E:\ProductSys\DTcms.Web.UI\bin\Release\DTcms.Common.dll
+E:\ProductSys\DTcms.Web.UI\bin\Release\DTcms.Model.dll
+E:\ProductSys\DTcms.Web.UI\bin\Release\LitJson.dll
+E:\ProductSys\DTcms.Web.UI\bin\Release\DTcms.DAL.dll
+E:\ProductSys\DTcms.Web.UI\bin\Release\DTcms.DBUtility.dll
+E:\ProductSys\DTcms.Web.UI\bin\Release\DTcms.BLL.pdb
+E:\ProductSys\DTcms.Web.UI\bin\Release\DTcms.Common.pdb
+E:\ProductSys\DTcms.Web.UI\bin\Release\DTcms.Model.pdb
+E:\ProductSys\DTcms.Web.UI\bin\Release\DTcms.DAL.pdb
+E:\ProductSys\DTcms.Web.UI\bin\Release\DTcms.DBUtility.pdb
+E:\ProductSys\DTcms.Web.UI\obj\Release\DTcms.Web.UI.csprojResolveAssemblyReference.cache
+E:\ProductSys\DTcms.Web.UI\obj\Release\DTcms.Web.UI.dll
+E:\ProductSys\DTcms.Web.UI\obj\Release\DTcms.Web.UI.pdb
